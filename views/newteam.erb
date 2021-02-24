@@ -3,9 +3,26 @@
  <head>
   <meta charset="UTF-8">
   <title>Basketball Team Signup</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
  </head>
  <body>
+    <div class="container" id="main-form-container">
+        <div class="row">
+            <h3>Basketball Team Signup</h3>
+            <form class = "col s12" method="POST" action="/team">
+                <div class="row"><div class="input-field col s6"><input id="name" name="name"><label for="name" class="active">Team Name</label></div></div>
+                <div class="row"><div class="input-field col s6"><input id="coach" name="coach"><label for="coach" class="active">Coach</label></div></div>
+                <div class="row"><div class="input-field col s6"><input id="pg" name="pg"><label for="pg" class="active">Point Guard</label></div></div>
+                <div class="row"><div class="input-field col s6"><input id="sg" name="sg"><label for="sg" class="active">Shooting Guard</label></div></div>
+                <div class="row"><div class="input-field col s6"><input id="sf" name="sf"><label for="sf" class="active">Small Forward</label></div></div>
+                <div class="row"><div class="input-field col s6"><input id="pf" name="pf"><label for="pf" class="active">Power Forward</label></div></div>
+                <div class="row"><div class="input-field col s6"><input id="c" name="c"><label for="c" class="active">Center</label></div></div>
+                <button class="center-align waves-effect waves-light btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+ <script>document.addEventListener('DOMContentLoaded', M.updateTextFields(););</script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
  </body>
 </html>
-
 
